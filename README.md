@@ -1,5 +1,5 @@
 # os-hardening-script.pl
-The script uses PERL and is executed from any directory on CentOS 8 that creates a Banner for ssh logins and installs Clamav and runs a virus scan.
+The script uses PERL and is executed from any directory on CentOS 8 and the script creates a Banner for SSH logins and installs Clamav and runs a virus scan.
 
 The script uses PERL and is executed from any directory on CentOS 8 by typing "perl hardening.pl” without the quotes and pressing enter. The script first begins by printing to the console details about the programmer and date of creation. The script creates a few variables and prints the working directory where the script was executed from and changes to the "/etc" directory. The script appends to the file called issue.net which is a file used by the OpenSSH server running by default on CentOS 8. It writes to the issue.net file a couple of legal lines specifying that any Unauthorized use will result in legal action. The reason for this addition to the Banner is because wiki.centos.org said, “Since the publication of the "Computer Misuse Act 1990" it has been strongly recommended that computers display a banner before allowing users to log in. The Act stipulates that an offense of unauthorized access can only be committed if the offender knew at the time that the access he intended to obtain was unauthorized.” (2020, para.3) 
 
